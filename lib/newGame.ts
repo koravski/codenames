@@ -1,5 +1,6 @@
 import dictionaryFr from "./dictionary-fr";
 import dictionaryEn from "./dictionary-en";
+import dictionaryBg from "./dictionary-bg";
 import dictionaryDe from "./dictionary-de";
 import dictionaryEs from "./dictionary-es";
 import dictionaryRu from "./dictionary-ru";
