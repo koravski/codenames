@@ -42,6 +42,7 @@ export type IGameMode = "duet" | "classic";
 export type ILanguage =
   | "fr"
   | "en"
+  | "bg"
   | "de"
   | "es"
   | "ru"

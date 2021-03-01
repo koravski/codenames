@@ -2,6 +2,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
 import en from "../locales/en";
+import bg from "../locales/bg";
 import es from "../locales/es";
 import fr from "../locales/fr";
 import ru from "../locales/ru";
@@ -14,6 +15,9 @@ i18n
     resources: {
       en: {
         translation: en,
+      },
+      bg: {
+        translation: bg,
       },
       es: {
         translation: es,

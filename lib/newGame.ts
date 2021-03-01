@@ -25,6 +25,7 @@ import {
 
 const dictionaries = {
   en: dictionaryEn,
+  bg: dictionaryBg,
   fr: dictionaryFr,
   de: dictionaryDe,
   es: dictionaryEs,

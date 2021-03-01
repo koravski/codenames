@@ -5,6 +5,7 @@ import React from "react";
 
 const Languages = {
   en: "English",
+  bg: "Български",
   fr: "Français",
   es: "Español",
   de: "Deutsch",

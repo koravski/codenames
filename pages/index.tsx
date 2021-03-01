@@ -34,7 +34,7 @@ const Home = ({ games, locale }: IProps) => {
     <div className="w-screen h-min-screen p-6 flex flex-col items-center bg-gray-100">
       <Head>
       <link rel="alternate" hrefLang="x-default" href="/" />
-        {["en", "fr", "es", "ru", "ptbr"].map(locale =>
+        {["en", "bg", "fr", "es", "ru", "ptbr"].map(locale =>
           <link rel="alternate" hrefLang={locale} key={locale} href={`/${locale}`} />
         )}
       </Head>

@@ -74,6 +74,10 @@ const Form = ({
               value: "en",
             },
             {
+              label: "🇧🇬 Български",
+              value: "bg",
+            },            
+            {
               label: "🇫🇷 Français",
               value: "fr",
             },

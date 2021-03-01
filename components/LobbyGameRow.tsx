@@ -39,6 +39,8 @@ const getFlag = (language: ILanguage) => {
   switch (language) {
     case "en":
       return "🇬🇧";
+    case "bg":
+      return "🇧🇬";    
     case "fr":
       return "🇫🇷";
     case "de":

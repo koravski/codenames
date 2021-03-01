@@ -17,7 +17,7 @@ const env = {
 const nextConfig = {
   env,
   i18n: {
-    locales: ["en", "fr", "es", "ru", "ptbr", "de"],
+    locales: ["en", "bg", "fr", "es", "ru", "ptbr", "de"],
     defaultLocale: "en",
   },
   target: "serverless",
