@@ -1,0 +1,33 @@
+/* purgecss start ignore */
+@import "tailwindcss/base";
+/* purgecss end ignore */
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+body {
+  @apply bg-gray-100 text-gray-900;
+}
+
+.h1 {
+  @apply text-4xl font-bold tracking-wide;
+}
+
+.h2 {
+  @apply text-xl font-bold;
+}
+
+.text-input {
+  @apply appearance-none border rounded py-2 px-3 leading-tight;
+}
+
+.text-input:focus {
+  @apply outline-none shadow;
+}
+
+.emoji {
+  background-size: contain;
+  display: inline-block;
+  margin-bottom: -3px;
+}
