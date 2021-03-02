@@ -1,8 +1,4 @@
-# codegame.cards
-
-<p align="center">
-    <img src="https://github.com/benjamintd/codegame.cards/raw/master/public/icon-192.png" width="192" alt="Codegame - icon by freepik" />
-</p>
+# codenames
 
 ## An online version of the Codegame tabletop game
 

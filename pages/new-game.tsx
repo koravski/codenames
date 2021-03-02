@@ -21,7 +21,7 @@ const NewGame = () => {
 
   return (
     // todo add options and stuff
-    <div className="w-screen h-screen p-6 flex flex-col items-center bg-gray-100">
+    <div className="w-screen h-screen p-6 flex flex-col items-center bg-gray-100 lessp">
       <div className="absolute top-0 right-0 m-4">
         <LanguageSelector />
       </div>
@@ -149,7 +149,7 @@ const MultipleChoice = ({ options, onClick, selected }) => {
         <div
           key={opt.value}
           className={classnames(
-            "rounded px-2 py-1 cursor-pointer w-48 text-center font-bold text-white border-b-4 ",
+            "rounded px-2 py-1 cursor-pointer w-48 text-center font-bold text-white border-b-4 fw ",
             {
               "bg-green-600 border-green-800": selected === opt.value,
               "bg-blue-600 border-blue-800 hover:bg-blue-500 hover:border-blue-700":
