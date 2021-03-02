@@ -10,7 +10,7 @@ const Meta = () => {
     <Head>
       <title>{t("page-title", "Codenames - Play Online")}</title>
       <meta name="description" content={t("page-description")} />
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       <link rel="shortcut icon" href="/icon.png" />
       <meta property="og:title" content="codenames.koravski.com" />
       <meta property="og:description" content={t("page-description")} />
