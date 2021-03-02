@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'media',
   theme: {
     fontFamily: {
       mono: ["Courier Prime", "monospace"],

@@ -14,12 +14,35 @@ const CopyLink = () => {
   const shareLink =
     typeof window !== "undefined" && window.location.origin
       ? `${window.location.origin}${router.asPath}`
-      : `https://codegame.cards${router.asPath}`;
+      : `https://codenames.koravski.com/${router.asPath}`;
 
   const copyToClipboard = () => {
-    ref.current.select();
-    document.execCommand("copy");
-    setCopied(true);
+
+    if (window.innerWidth < 768) {
+      if (navigator.share) {
+        navigator
+          .share({
+            title: "Web Share API Draft",
+            text: "Please join the game!",
+            url: `https://codenames.koravski.com/${router.asPath}`,
+          })
+          .then(() => console.log("Successful share"))
+          .catch((error) => console.log("Error sharing", error));
+      } else {
+        console.log("Share not supported on this browser, do it the old way.");
+      }
+    } else {
+      ref.current.select();
+      document.execCommand("copy");
+      setCopied(true);
+    }
+
+   
+ 
+
+
+
+  
   };
 
   useEffect(() => {
