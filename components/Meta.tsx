@@ -8,9 +8,10 @@ const Meta = () => {
   const router = useRouter();
   return (
     <Head>
-      <title>{t("page-title", "Codegame - Play Online")}</title>
+      <title>{t("page-title", "Codenames - Play Online")}</title>
       <meta name="description" content={t("page-description")} />
-      <link rel="shortcut icon" href="/icon-192.png" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="shortcut icon" href="/icon.png" />
       <meta property="og:title" content="codenames.koravski.com" />
       <meta property="og:description" content={t("page-description")} />
       <meta
@@ -30,7 +31,7 @@ const Meta = () => {
         href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap"
         rel="stylesheet"
       ></link>
-      <link rel="apple-touch-icon" href="/icon-512.png"></link>
+      <link rel="apple-touch-icon" href="/icon.png"></link>
       <link rel="manifest" href="/manifest.webmanifest"></link>
     </Head>
   );
