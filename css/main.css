@@ -46,3 +46,11 @@ body {
 .fw{
 width: 100%;
 }
+
+.header-cont {
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}

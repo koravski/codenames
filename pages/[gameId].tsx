@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 import useMobileDetect from "../hooks/useMobileDetect";
 import useWindowSize from "../hooks/useWindowSize";
 import { i18n } from "../lib/i18n";
+import  Header  from "../components/Header";
 
 export default () => {
   const network = useNetwork();
@@ -29,10 +30,10 @@ export default () => {
   // e.g. sounds or forwarding the player to the next game
   const reducer = (game: IGame, newGame: IGame): IGame => {
     if (Date.now() - lastSound > 300) {
-      const soundWasPlayed = playSounds(newGame, game);
-      if (soundWasPlayed) {
-        setLastSound(Date.now());
-      }
+      // const soundWasPlayed = playSounds(newGame, game);
+      // if (soundWasPlayed) {
+      //   setLastSound(Date.now());
+      // }
     }
 
     if (
@@ -78,6 +79,8 @@ export default () => {
   }, [game, player]);
 
   return (
+    <>
+    <Header/>
     <GameViewContext.Provider value={gameView}>
       <AnimatePresence>
         {!game && (
@@ -111,5 +114,6 @@ export default () => {
         </div>
       </div>
     </GameViewContext.Provider>
+    </>
   );
 };

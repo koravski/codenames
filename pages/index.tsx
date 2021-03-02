@@ -15,6 +15,7 @@ import { useTranslation, Trans } from "react-i18next";
 import LanguageSelector from "../components/LanguageSelector";
 import { i18n } from "../lib/i18n";
 import Head from "next/head";
+import  Header  from "../components/Header";
 
 interface IProps {
   games: IGame[];
@@ -31,6 +32,8 @@ const Home = ({ games, locale }: IProps) => {
   }, []);
 
   return (
+    <>
+    <Header/>
     <div className="w-screen h-min-screen p-6 flex flex-col items-center bg-gray-100">
       <Head>
       <link rel="alternate" hrefLang="x-default" href="/" />
@@ -38,10 +41,10 @@ const Home = ({ games, locale }: IProps) => {
           <link rel="alternate" hrefLang={locale} key={locale} href={`/${locale}`} />
         )}
       </Head>
-      <div className="absolute top-0 right-0 m-4">
+      <div className="absolute top-0 right-0 m-2">
         <LanguageSelector />
       </div>
-      <h1 className="h1 font-mono mt-6">Codenames</h1>
+      {/* <h1 className="h1 font-mono mt-6">Codenames</h1> */}
       {/* <p className="font-mono mb-4">
         {t("tagline", "The popular card game, online. 🕵️‍♂️")}
       </p> */}
@@ -119,15 +122,16 @@ const Home = ({ games, locale }: IProps) => {
           </div>
         )}
       </div>
-      <div className="mt-6 text-gray-700 max-w-4xl">
+      {/* <div className="mt-6 text-gray-700 max-w-4xl">
         <p className="mb-2">
           <Trans i18nKey="check-our-privacy-policy">
             Check our{" "}
             <PrivacyLink>privacy policy</PrivacyLink>
           </Trans>
         </p>
-      </div>
+      </div> */}
     </div>
+    </>
   );
 };
 
