@@ -49,8 +49,19 @@ width: 100%;
 
 .header-cont {
   height: 50px;
-  background-color: #000;
+  background-color: #2b6cb0;
   color: #fff;
   display: flex;
   align-items: center;
+}
+
+.top--3 {
+  top: -3px;
+}
+
+.border-blue-800,
+.border-green-800,
+.border-red-800,
+.border-red-900 {
+  border: 0;
 }

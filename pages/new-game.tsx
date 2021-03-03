@@ -26,7 +26,7 @@ const NewGame = () => {
     <>
     <Header/>
     <div className="w-screen h-screen p-6 flex flex-col items-center bg-gray-100 lessp">
-      <div className="absolute top-0 right-0 m-2">
+      <div className="absolute top-0 right-0 m-2 top--3">
         <LanguageSelector />
       </div>
       {/* <h1 className="h1 font-mono mt-6 mb-4">Codegames</h1> */}

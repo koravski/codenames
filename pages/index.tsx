@@ -41,7 +41,7 @@ const Home = ({ games, locale }: IProps) => {
           <link rel="alternate" hrefLang={locale} key={locale} href={`/${locale}`} />
         )}
       </Head>
-      <div className="absolute top-0 right-0 m-2">
+      <div className="absolute top-0 right-0 m-2 top--3 ">
         <LanguageSelector />
       </div>
       {/* <h1 className="h1 font-mono mt-6">Codenames</h1> */}
