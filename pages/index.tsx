@@ -81,14 +81,14 @@ const Home = ({ games, locale }: IProps) => {
             "Codegame is a game of guessing where teams compete to find words related to a hint-word given by another player."
           )}
         </p>
-        <Image
+        {/* <Image
           height={665}
           width={888}
           className="p-6"
           src="/illustration.svg"
           alt="Codegame illustration"
-        />
-
+        /> */}
+        <br/>
         {!seeMore && (
           <p
             onClick={() => setSeeMore(true)}
